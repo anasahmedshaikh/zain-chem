@@ -2,11 +2,10 @@ import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { BookOpenIcon, GraduationCapIcon, NewspaperIcon } from "lucide-react"
-import me from '../images/zain.jpg'
+import zain from '../images/zain.jpg'
 
 export default function Component() {
   
-
   return (
     <div className="flex flex-col min-h-screen">
       <main className="flex-1">
@@ -16,7 +15,7 @@ export default function Component() {
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Welcome to Prof. Zain Chem Lab
+                  Welcome to Prof. Zain Chemistry Lab
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
                   Exploring the frontiers of chemistry and inspiring the next generation of scientists.
@@ -29,14 +28,14 @@ export default function Component() {
             </div>
           </div>
         </section>
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section id="about" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-[1fr_400px] lg:gap-12 xl:grid-cols-[1fr_600px]">
               <Image
+                src={zain}
                 alt="Professor Zain Chem"
                 className="mx-auto aspect-square overflow-hidden rounded-xl object-cover object-center sm:w-full lg:-order-none"
                 height="550"
-                src={me}
                 width="550"
               />
               <div className="flex flex-col justify-center space-y-4">
